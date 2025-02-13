@@ -4,7 +4,8 @@
 
 #include <iostream>
 using namespace std;
-int main() {
+int main()
+{
   int num=40, count=0;
 //  cout<<"Enter the number to be tested: ";
 //  cin>>num;

@@ -1,6 +1,6 @@
 //
 // Created by Aayush Kumar Jaiswal on 13/02/25.
-// in class
+// homework
 
 #include <iostream>
 using namespace std;

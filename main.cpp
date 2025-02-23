@@ -1,25 +1,28 @@
 //
-// Created by Aayush Kumar Jaiswal on 17/02/25.
-// in class
-// What is armstrong number? Numbers whose sum (digit ^ no.of digits)
+// Created by Aayush Kumar Jaiswal on 21/02/25.
+// self-practice
 
 #include <iostream>
 using namespace std;
-
-int main(){
-    int count=0,num=100,d1,d2,d3,sum;
-    while (num<=999) {
-        d1=(num/100);       //253/100 = 2
-        d2=(num/10)%10;     //(253/10=25)%10 = 5
-        d3=(num%100)%10;    //253%100 = 53%10 = 3
-        sum=d1*d1*d1+d2*d2*d2+d3*d3*d3; //Sum of digits cubed
-        if (sum==num)
-        {
-            printf("%d\t",num);
-            count++;
-        }
-        num++;
+int main() {
+    int num,count=0;
+    cout<<"Enter the number to be checked: ";
+    cin>>num;
+    if(num<=1){
+        cout<<num<<" is not a prime number."<<endl;
     }
-    cout<<endl<<"Total number of 3 digits armstrong numbers: "<<count;
+    else{
+        for (int counter=1;counter<=num;counter++) {
+            if(num%counter==0) {
+                count++;
+            }
+        }
+        if(count>2){
+            cout<<num<<" is not a prime number."<<endl;
+        }
+        else{
+            cout<<num<<" is a prime number."<<endl;
+        }
+    }
     return 0;
 }

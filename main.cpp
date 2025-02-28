@@ -1,28 +1,14 @@
 //
-// Created by Aayush Kumar Jaiswal on 21/02/25.
-// self-practice
+// Created by Aayush Kumar Jaiswal on 27/02/25.
+// in class
 
 #include <iostream>
 using namespace std;
-int main() {
-    int num,count=0;
-    cout<<"Enter the number to be checked: ";
-    cin>>num;
-    if(num<=1){
-        cout<<num<<" is not a prime number."<<endl;
-    }
-    else{
-        for (int counter=1;counter<=num;counter++) {
-            if(num%counter==0) {
-                count++;
-            }
-        }
-        if(count>2){
-            cout<<num<<" is not a prime number."<<endl;
-        }
-        else{
-            cout<<num<<" is a prime number."<<endl;
-        }
-    }
+
+int main(){
+    int numarr[10],num,min,max;
+    cin>>numarr[0];
+    cin>>numarr[10];
+    cout<<numarr<<endl;
     return 0;
 }
